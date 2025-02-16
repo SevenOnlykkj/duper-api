@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "XANAX APIS",
   "engines": {
-    "node": "18.12.1"
+    "node": "18.18.0"
   },
   "main": "jrpc.js",
   "scripts": {
