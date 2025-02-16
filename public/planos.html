@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ğ™‹ğ™‡ğ˜¼ğ™‰ğ™Šğ™ ğ˜¿ğ™€ ğ˜¼ğ™‹ğ™„ ğ™†ğ™€ğ™”</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #282828;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #ff4c4c; /* Cor alterada para vermelho */
+            text-align: center;
+        }
+        p {
+            color: #ddd;
+            line-height: 1.6;
+        }
+        .terms {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .terms input {
+            margin-right: 10px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #ff4c4c; /* Cor alterada para vermelho */
+            color: black;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 0 10px;
+        }
+        button:hover {
+            background-color: #d13939; /* Cor alterada para um tom mais escuro de vermelho */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Politica de Privacidade</h2>
+        <p>Aten??o: Ao Adquirir Uma API KEY Voc¨º Concorda Que N?o Deve Repassar Ou Compartilhar Sua KEY Com Terceiros. O Repasse Da API KEY ? Estritamente Proibido. O Propriet¨¢rio Do Site Reserva-se O Direito De Remover Sua API KEY Imediatamente, Sem Aviso Pr¨¦vio, Se Houver Suspeita De Compartilhamento N?o Autorizado. Est¨¢ Medida ? Necess¨¢ria Para Proteger A Integridade Do Servi?o E Garantir O Uso Justo Das APIs.
+        </p>
+
+        <div class="terms">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">Concordo Com Os Termos</label>
+        </div>
+
+        <div class="button-container">
+            <button id="agreeButton" onclick="redirectToPurchase()">Concordar E Comprar</button>
+            <button onclick="goBack()">Voltar</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Todos Os Direitos Reservados A Redzin
+    </div>
+
+    <script>
+        function redirectToPurchase() {
+            const checkbox = document.getElementById('agree');
+            if (checkbox.checked) {
+                alert('Ok, Escolha O Plano Que Voc¨º Deseja'); // Aqui Voc¨º Pode Adicionar L¨®gica Para Processar A Compra
+                window.location.href = 'politica_privacidade.html'; // Voltar Para A Pagina Inicial
+            } else {
+                alert('Voc¨º Precisa Concordar Com Os Termos Para Completar A Compra.');
+            }
+        }
+
+        function goBack() {
+            window.history.back(); // Volta Para A Pagina Anterior
+        }
+    </script>
+</body>
+</html>
