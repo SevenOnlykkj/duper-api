@@ -77,7 +77,7 @@ var { ytSearch } = require('./lib/yt.js')
 const { youtubedl } = require('./node_modules/@bochilteam/scraper-sosmed/lib/cjs/src/youtube.js');
 
 
-var criador = "Redzin"
+var criador = "Max"
 var apicuttly = ['2038c1a7754b408aa8f9055282638c00e668e','4786cc6a0f19de9c67ea6a4282c494323c932','89d73b3a07209177d0251e30d49d66bd669ac','e841147455d0fdfbf50f74aefe63b6728adc0','27f3aa3f45cb4460bcbac69b782ca470a4570','31a8df09d5a9d8d009790df0b5642e3d76919','09b4e764ff07b10eac1682e71aaf95a78f358','75fe576ce040b619176af22f5a718b2f574f5','e24ee36f9c1519c0a779667a5182a31fb7ccf','903869065d29e23455ddca922071f4bbeb133']
 var apibitly = ['2243940c230ad0d748059aee58ddf126b65fd8e7','6cfc18e9bfa554714fadc10a1f6aff7555642348','c71b6658a1d271ddaf2a5077de3dcb9d67f68025','cddbceccdc2f1c9d11e4cdd0d2b1d1078e447c43','7915c671fbd90eca96310e5c9442d761225a1080','e5dee46eb2d69fc9f4b0057266226a52a3555356','f09ab8db9cf778b37a1cf8bc406eee5063816dec','964080579f959c0cc3226b4b2053cd6520bb60ad','a4f429289bf8bf6291be4b1661df57dde5066525','3d48e2601f25800f375ba388c30266aad54544ae','4854cb9fbad67724a2ef9c27a9d1a4e9ded62faa','d375cf1fafb3dc17e711870524ef4589995c4f69','43f58e789d57247b2cf285d7d24ab755ba383a28','971f6c6c2efe6cb5d278b4164acef11c5f21b637','ae128b3094c96bf5fd1a349e7ac03113e21d82c9','e65f2948f584ffd4c568bf248705eee2714abdd2','08425cf957368db9136484145aa6771e1171e232','dc4bec42a64749b0f23f1a8f525a69184227e301','0f9eb729a7a08ff5e73fe1860c6dc587cc523035','037c5017712c8f5f154ebbe6f91db1f82793c375']
 var translate = (text, lang) => { return new Promise(async (resolve, reject) => { trans(text, { conn: 'gtx', to: lang }).then((res) => resolve(res.text)).catch((err) => reject(err)) });}
@@ -101,7 +101,7 @@ reject(err)
 })
 })
 
-const banner = cfonts.render(("REDZIN API"), {
+const banner = cfonts.render(("DUPER API"), {
 font: "block",
 align: "center",
 gradient: ["magenta","red"]
@@ -228,7 +228,7 @@ app.get('/api/add-key',(req, res) => {
 a = req.query.a
 if(!a.includes("&")) return res.json({resultado: "Faltando o and"})
 var [apikey, senha, rq] = a.split("&")
-var senhaofc = "0310"
+var senhaofc = "22061979"
 if(senha != senhaofc) return res.json({resultado: "Senha invalida.."})
 if(!apikey) return res.json({resultado: "Kd a key.."})
 if(key.map(i => i.apikey).includes(apikey)) {
@@ -250,7 +250,7 @@ app.get('/api/del-key',(req, res) => {
 a = req.query.a
 if(!a.includes("&")) return res.json({msg: "Faltando o and"})
 var [apikey, senha] = a.split("&")
-var senhaofc = "0310"
+var senhaofc = "22061979"
 if(senha != senhaofc) return res.json({msg: "Senha invalida.."})
 if(!apikey) return res.json({msg: "Kd a key.."})
 if(!key.map(i => i.apikey).includes(apikey)) {
@@ -272,7 +272,7 @@ if (!req.query.grupo) return res.json({ status: 404, error: 'Insira o parametro:
 
 let welcomer = await new canvasx.Welcome()
 .setUsername(req.query.nome)
-.setDiscriminator("2023")
+.setDiscriminator("2025")
 .setText("title", req.query.titulo)
 .setText("message", req.query.grupo)
 .setAvatar(req.query.perfil)
@@ -353,8 +353,8 @@ url = req.query.url
 fbdown(url).then(data => {
 res.json({
 status: true,
-mensagem: 'REDZIN API - MELHOR SITE DE APIS',
-criador: `@FANTASMA - 21 977373786`,
+mensagem: 'DUPER API - MELHOR SITE DE APIS',
+criador: `MAX - 34 999123903`,
 resultado: data
 })}).catch(e => {
 res.json({
@@ -378,8 +378,8 @@ try {
 instavideo = await igdl(url)
 res.json({
 status: true,
-mensagem: 'REDZIN API - MELHOR SITE DE APIS',
-criador: `Redzin`,
+mensagem: 'DUPER API - MELHOR SITE DE APIS',
+criador: `Max`,
 resultado: instavideo.resultado[0].link_dl,
 })
 } catch (err) {
@@ -398,8 +398,8 @@ await listkeys(apikey, req);
 auu = await Request(`http://br3.bronxyshost.com:3039/api-bronxys/info_celular?celular=${celular}&apikey=daniel_dzn`)
 res.json({
 status: true,
-mensagem: 'FANTASMA MODS REST APPIS - MELHOR SITE DE APIS',
-criador: `Redzin`,
+mensagem: 'DUPER APIS - MELHOR SITE DE APIS',
+criador: `Max`,
 resultado: {
 nomeCelular: `${auu.celular}`,
 informações: `${auu.infoc}`,
@@ -419,8 +419,8 @@ await listkeys(apikey, req);
 auu = await Request(`http://br3.bronxyshost.com:3039/api-bronxys/horoscopo?signo=${signo}&apikey=daniel_dzn`)
 res.json({
 status: true,
-mensagem: 'REDZIN API - MELHOR SITE DE APIS',
-criador: `Redzin`,
+mensagem: 'DUPER API - MELHOR SITE DE APIS',
+criador: `Max`,
 resultado: {
 imagem: `${auu.img}`,
 título: `${auu.title}`,
@@ -436,7 +436,7 @@ if(key[key.map(i => i?.apikey)?.indexOf(apikey)]?.request <= 0) return res.sendF
 if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
-if (!q) return res.json({ status : false, creator : `Redzin`, message : "Cade o parametro q?"}) 
+if (!q) return res.json({ status : false, creator : `Max`, message : "Cade o parametro q?"}) 
   if(key.includes(apikey)){
     fetch(encodeURI(`https://p7api.xyz/api/happymod?nome=${q}&apikey=6bb2f5-22a158-0441f9-6b4308-115f0f`))
     .then(response => response.json())
@@ -445,7 +445,7 @@ if (!q) return res.json({ status : false, creator : `Redzin`, message : "Cade o 
         var resultado = hasil.resultado;
              res.json({
                  status: true,
-                 criador: `Redzin`,
+                 criador: `Max`,
                  resultado
              })
          })
@@ -472,7 +472,7 @@ pensadorSearch(query)
 .then(dados => {
 res.json({
 status:true,
-criador:'Redzin',
+criador:'Max',
 resultado: dados
 })
 }).catch(e => {
@@ -495,7 +495,7 @@ wallpaper2(query)
 .then(result => {
 res.json({
 status:true,
-criador:'Redzin',
+criador:'Max',
 resultado: result
 })
 }).catch(e => {
@@ -516,7 +516,7 @@ var url = await getTikTokLink(q)
 tiktok2(url).then(result => {
 res.json({
 status:true,
-criador:'Redzin',
+criador:'Max',
 resultado: result
 })
 }).catch(e => {
@@ -538,7 +538,7 @@ await listkeys(apikey, req);
 tiktok2(url).then(result => {
 res.json({
 status:true,
-criador:'Redzin',
+criador:'Max',
 resultado: result
 })
 }).catch(e => {
@@ -557,8 +557,8 @@ url = req.query.url
 FacebookMp4(url).then(resultado => {
 res.json({
 status: true,
-mensagem: 'REDZIN API - MELHOR SITE DE APIS',
-criador: `Redzin`,
+mensagem: 'DUPER API - MELHOR SITE DE APIS',
+criador: `Max`,
 resultado: resultado
 })}).catch(e => {
 res.json({
@@ -573,13 +573,13 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 q = req.query.q
- if (!q) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: q"})
+ if (!q) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: q"})
 filme(q).then(resultado => {
 res.json({
 status: true,
 código: 200,
 criador: `${criador}`,
-code_by: `@Gabriel`,
+code_by: `Max`,
 pesquisa: resultado
 })}).catch(e => {
 res.json({
@@ -594,7 +594,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 q = req.query.q
- if (!q) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: q"})
+ if (!q) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: q"})
  pornogratis(q).then(resultado => {
 res.json({
 status: true,
@@ -614,7 +614,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 q = req.query.q
- if (!q) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: q"})
+ if (!q) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: q"})
  nerding(q).then(resultado => {
 res.json({
 status: true,
@@ -634,7 +634,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 nome = req.query.nome
- if (!nome) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: nome"})
+ if (!nome) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: nome"})
 PlayStoreSearch(nome).then(data => {
 res.json({
 pesquisa: data
@@ -650,7 +650,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 nome = req.query.nome
- if (!nome) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: nome"})
+ if (!nome) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: nome"})
 mercadoLivreSearch2(nome).then(data => {
 res.json({
 pesquisa: data
@@ -666,7 +666,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 nome = req.query.nome
- if (!nome) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: nome"})
+ if (!nome) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: nome"})
 AmazonSearch(nome).then(data => {
 res.json({
 pesquisa: data
@@ -682,7 +682,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 url = req.query.url
-if (!url) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: url"})
+if (!url) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: url"})
 pinterestVideoV2(url).then(data => {
 res.json({
 pesquisa: data
@@ -698,7 +698,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 nome = req.query.nome
- if (!nome) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: nome"})
+ if (!nome) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: nome"})
 AmericanasSearch(nome).then(dados => {
 res.json({
 pesquisa: data
@@ -714,7 +714,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 url = req.query.url
- if (!url) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: url"})
+ if (!url) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: url"})
 getVideosPlaylist(url).then(resJson => {
 res.json({
 pesquisa: resJson
@@ -730,7 +730,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 nome = req.query.nome
- if (!nome) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: nome"})
+ if (!nome) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: nome"})
 SubmarinoSearch(nome).then(dados => {
 res.json({
 pesquisa: data
@@ -747,7 +747,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 signo = req.query.signo
-if (!signo) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: signo"})
+if (!signo) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: signo"})
 Horoscopo(signo).then(data => {
 res.json({
 pesquisa: data
@@ -763,7 +763,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 categoria = req.query.categoria
- if (!categoria) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: categoria"})
+ if (!categoria) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: categoria"})
 randomGrupos(categoria).then(dados => {
 res.json({
 pesquisa: dados
@@ -779,7 +779,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 url = req.query.url
-if (!url) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: url"})
+if (!url) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: url"})
 kwai(url).then(hasil => {
 res.json({
 status: 200,
@@ -797,7 +797,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 pergunta = req.query.pergunta
- if (!pergunta) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: pergunta"})
+ if (!pergunta) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: pergunta"})
 InArtificial(pergunta).then(hasil => {
 res.json({
 status: 200,
@@ -815,7 +815,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 texto = req.query.texto
- if (!texto) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: texto"})
+ if (!texto) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: texto"})
 CorretorOpenAi(texto).then(hasil => {
 res.json({
 status: 200,
@@ -847,7 +847,7 @@ if(key[key.map(i => i?.apikey)?.indexOf(apikey)]?.request <= 0) return res.sendF
 if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
-  if (!query) return res.json({ status : false, criador : `Redzin`, mensagem : "Coloque o parametro: query"})
+  if (!query) return res.json({ status : false, criador : `Max`, mensagem : "Coloque o parametro: query"})
 ringtone(query).then(hasil => {
 res.json({
 status: 200,
@@ -964,7 +964,7 @@ msg: `Erro no Servidor Interno`
 
 app.get('/api/apkmody', async(req, res, next) => {
 q = req.query.q
-if (!q) return res.json({ status : false, creator : `Redzin`, message : "Cade o parametro q?"}) 
+if (!q) return res.json({ status : false, creator : `Max`, message : "Cade o parametro q?"}) 
 apikey = req.query.apikey
 if(key[key.map(i => i?.apikey)?.indexOf(apikey)]?.request <= 0) return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
