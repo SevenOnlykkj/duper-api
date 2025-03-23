@@ -4171,7 +4171,7 @@ if(!apikey)return res.json({resultado:'Cade o parametro apikey?'})
 if(!key.map(i => i.apikey)?.includes(apikey))return res.sendFile(path.join(__dirname, "./public/", "limited.html"))
 await listkeys(apikey, req);
 	if(key.includes(apikey)){    
-    hasil = `https://api.popcat.xyz/screenshot?url=${url}`
+    hasil = `https://api.nexfuture.com.br/api/outros/printsite?url=${url}`
 	  data = await fetch(hasil).then(v => v.buffer())   
          await fs.writeFileSync(bla + '/tmp/asupan.jpg', data)
         res.sendFile(bla + '/tmp/asupan.jpg')
